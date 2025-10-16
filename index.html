@@ -1,0 +1,58 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Дэшборд 4 виджета (модули)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="dashboard">
+    <section class="widget widget--pokemons" aria-label="рандомайзер покемонов">
+      <div class="widget__header">
+        <h2 class="widget__title">Покемоны</h2>
+      </div>
+      <div class="widget__body" id="pokemons-area">
+        <p class="placeholder">Кликните кнопку, чтобы рандомизировать</p>
+      </div>
+      <button class="widget__action" id="pokemons-btn" type="button">Сгенерировать покемонов</button>
+    </section>
+
+    <section class="widget widget--timer" aria-label="таймер">
+      <div class="widget__header">
+        <h2 class="widget__title">Таймер</h2>
+      </div>
+      <div class="widget__body" id="timer-area">
+        <div class="timer-display" id="timer-display">00:00:00</div>
+      </div>
+      <div class="widget__footer">
+        <button class="widget__action" id="start-timer" type="button">Старт</button>
+        <button class="widget__action" id="reset-timer" type="button">Сброс</button>
+      </div>
+    </section>
+
+    <section class="widget widget--zodiac" aria-label="знак зодиака">
+      <div class="widget__header">
+        <h2 class="widget__title">Знак Зодиака</h2>
+      </div>
+      <div class="widget__body" id="zodiac-area">
+        <div class="zodiac-display" id="zodiac-display">Ваш знак: <strong>Технически — нужно выбрать дату</strong></div>
+      </div>
+      <button class="widget__action" id="show-zodiac" type="button">Показать мой знак</button>
+    </section>
+
+    <section class="widget widget--dice" aria-label="подбрасывание кубика">
+      <div class="widget__header">
+        <h2 class="widget__title">Кубик</h2>
+      </div>
+      <div class="widget__body" id="dice-area">
+        <div class="dice-display" id="dice-display">0</div>
+      </div>
+      <button class="widget__action" id="roll-dice" type="button">Покрутить</button>
+    </section>
+  </main>
+
+  <script type="module" src="js/w5.js"></script>
+</body>
+</html>
